@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.github.ahmedabdelrahim0263836_jpg.twa",
+        "sha256_cert_fingerprints": ["BB:5A:7B:3B:7E:00:C7:9A:34:1E:56:C3:60:57:38:F4:8D:B0:B1:1D:E9:BE:BD:DE:8C:40:DD:56:E2:01:85:9E"]
+      }
+    }]
