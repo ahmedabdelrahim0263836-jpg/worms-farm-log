@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
-<title>سجل المزارع</title>
-<meta name="description" content="تطبيق لإدارة وتتبع مزارع إكثار الريدويجلر والزاحف الأفريقي">
+<title>ط³ط¬ظ„ ط§ظ„ظ…ط²ط§ط±ط¹</title>
+<meta name="description" content="طھط·ط¨ظٹظ‚ ظ„ط¥ط¯ط§ط±ط© ظˆطھطھط¨ط¹ ظ…ط²ط§ط±ط¹ ط¥ظƒط«ط§ط± ط§ظ„ط±ظٹط¯ظˆظٹط¬ظ„ط± ظˆط§ظ„ط²ط§ط­ظپ ط§ظ„ط£ظپط±ظٹظ‚ظٹ">
 
 <!-- PWA / Add to Home Screen support -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="سجل المزارع">
+<meta name="apple-mobile-web-app-title" content="ط³ط¬ظ„ ط§ظ„ظ…ط²ط§ط±ط¹">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#3D2B1F">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -132,7 +132,7 @@
     padding: 7px 28px 7px 10px; appearance: none; cursor: pointer;
   }
   .sort-select-wrap::after {
-    content: '▾'; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+    content: 'â–¾'; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
     font-size: 10px; color: var(--ink-soft); pointer-events: none;
   }
 
@@ -389,10 +389,10 @@
   <header>
     <div class="header-top">
       <div class="brand-stamp">
-        <div class="icon">🪱</div>
+        <div class="icon">ًںھ±</div>
         <div>
-          <h1>سجل المزارع</h1>
-          <div class="subtitle">إكثار الريدويجلر والزاحف الأفريقي</div>
+          <h1>ط³ط¬ظ„ ط§ظ„ظ…ط²ط§ط±ط¹</h1>
+          <div class="subtitle">ط¥ظƒط«ط§ط± ط§ظ„ط±ظٹط¯ظˆظٹط¬ظ„ط± ظˆط§ظ„ط²ط§ط­ظپ ط§ظ„ط£ظپط±ظٹظ‚ظٹ</div>
         </div>
       </div>
       <div class="today-stamp mono" id="todayStamp">--</div>
@@ -402,11 +402,11 @@
 
   <div class="install-banner" id="installBanner" style="display:none;">
     <div class="install-banner-text">
-      <b>ضيف الموقع على شاشتك الرئيسية</b>
-      <span>يشتغل بعد كده زي أي تطبيق عادي</span>
+      <b>ط¶ظٹظپ ط§ظ„ظ…ظˆظ‚ط¹ ط¹ظ„ظ‰ ط´ط§ط´طھظƒ ط§ظ„ط±ط¦ظٹط³ظٹط©</b>
+      <span>ظٹط´طھط؛ظ„ ط¨ط¹ط¯ ظƒط¯ظ‡ ط²ظٹ ط£ظٹ طھط·ط¨ظٹظ‚ ط¹ط§ط¯ظٹ</span>
     </div>
-    <button onclick="openInstallSheet()">إزاي؟</button>
-    <button class="dismiss" onclick="dismissInstallBanner()">✕</button>
+    <button onclick="openInstallSheet()">ط¥ط²ط§ظٹطں</button>
+    <button class="dismiss" onclick="dismissInstallBanner()">âœ•</button>
   </div>
 
   <main id="mainContent">
@@ -414,12 +414,12 @@
       <span class="toolbar-label" id="farmCountLabel"></span>
       <div class="sort-select-wrap">
         <select class="sort-select" id="sortSelect" onchange="onSortChange()">
-          <option value="newest">الأحدث أولاً</option>
-          <option value="oldest">الأقدم أولاً</option>
-          <option value="size-desc">الأكبر مساحة</option>
-          <option value="size-asc">الأصغر مساحة</option>
-          <option value="feed-urgent">الوجبة الأقرب</option>
-          <option value="harvest-urgent">الأقرب للخف</option>
+          <option value="newest">ط§ظ„ط£ط­ط¯ط« ط£ظˆظ„ط§ظ‹</option>
+          <option value="oldest">ط§ظ„ط£ظ‚ط¯ظ… ط£ظˆظ„ط§ظ‹</option>
+          <option value="size-desc">ط§ظ„ط£ظƒط¨ط± ظ…ط³ط§ط­ط©</option>
+          <option value="size-asc">ط§ظ„ط£طµط؛ط± ظ…ط³ط§ط­ط©</option>
+          <option value="feed-urgent">ط§ظ„ظˆط¬ط¨ط© ط§ظ„ط£ظ‚ط±ط¨</option>
+          <option value="harvest-urgent">ط§ظ„ط£ظ‚ط±ط¨ ظ„ظ„ط®ظپ</option>
         </select>
       </div>
     </div>
@@ -428,7 +428,7 @@
 
   <div class="fab">
     <button onclick="openAddSheet()">
-      <span style="font-size:17px;">＋</span> إضافة مزرعة جديدة
+      <span style="font-size:17px;">ï¼‹</span> ط¥ط¶ط§ظپط© ظ…ط²ط±ط¹ط© ط¬ط¯ظٹط¯ط©
     </button>
   </div>
 </div>
@@ -438,75 +438,75 @@
   <div class="sheet">
     <div class="sheet-handle"></div>
     <div class="sheet-header">
-      <h2 id="addSheetTitle">مزرعة جديدة</h2>
-      <button class="sheet-close" onclick="closeAddSheet()">✕</button>
+      <h2 id="addSheetTitle">ظ…ط²ط±ط¹ط© ط¬ط¯ظٹط¯ط©</h2>
+      <button class="sheet-close" onclick="closeAddSheet()">âœ•</button>
     </div>
     <div class="sheet-body">
       <div class="form-group">
-        <label>نوع الدود</label>
+        <label>ظ†ظˆط¹ ط§ظ„ط¯ظˆط¯</label>
         <div class="species-select">
-          <div class="species-option wiggler" id="opt-wiggler" onclick="selectSpecies('wiggler')">🔴 ريدويجلر</div>
-          <div class="species-option crawler" id="opt-crawler" onclick="selectSpecies('crawler')">🟢 زاحف أفريقي</div>
+          <div class="species-option wiggler" id="opt-wiggler" onclick="selectSpecies('wiggler')">ًں”´ ط±ظٹط¯ظˆظٹط¬ظ„ط±</div>
+          <div class="species-option crawler" id="opt-crawler" onclick="selectSpecies('crawler')">ًںں¢ ط²ط§ط­ظپ ط£ظپط±ظٹظ‚ظٹ</div>
         </div>
       </div>
 
       <div class="form-group">
-        <label>اسم المزرعة</label>
-        <input type="text" id="f-name" placeholder="مثال: ريدويجلر 6">
+        <label>ط§ط³ظ… ط§ظ„ظ…ط²ط±ط¹ط©</label>
+        <input type="text" id="f-name" placeholder="ظ…ط«ط§ظ„: ط±ظٹط¯ظˆظٹط¬ظ„ط± 6">
       </div>
 
       <div class="form-group">
-        <label>تاريخ الإنشاء</label>
+        <label>طھط§ط±ظٹط® ط§ظ„ط¥ظ†ط´ط§ط،</label>
         <input type="date" id="f-startDate">
       </div>
 
       <div class="form-group">
-        <label>الأبعاد (سم)</label>
+        <label>ط§ظ„ط£ط¨ط¹ط§ط¯ (ط³ظ…)</label>
         <div class="form-row">
-          <div class="form-group"><input type="number" id="f-length" placeholder="الطول" oninput="updateComputed()"></div>
-          <div class="form-group"><input type="number" id="f-width" placeholder="العرض" oninput="updateComputed()"></div>
-          <div class="form-group"><input type="number" id="f-height" placeholder="الارتفاع" oninput="updateComputed()"></div>
+          <div class="form-group"><input type="number" id="f-length" placeholder="ط§ظ„ط·ظˆظ„" oninput="updateComputed()"></div>
+          <div class="form-group"><input type="number" id="f-width" placeholder="ط§ظ„ط¹ط±ط¶" oninput="updateComputed()"></div>
+          <div class="form-group"><input type="number" id="f-height" placeholder="ط§ظ„ط§ط±طھظپط§ط¹" oninput="updateComputed()"></div>
         </div>
       </div>
 
       <div class="form-group">
-        <label>وزن البداية الفعلي (جم) — اختياري</label>
-        <input type="number" id="f-startWeight" placeholder="اتركه فارغاً لاستخدام القيمة المثالية المحسوبة">
+        <label>ظˆط²ظ† ط§ظ„ط¨ط¯ط§ظٹط© ط§ظ„ظپط¹ظ„ظٹ (ط¬ظ…) â€” ط§ط®طھظٹط§ط±ظٹ</label>
+        <input type="number" id="f-startWeight" placeholder="ط§طھط±ظƒظ‡ ظپط§ط±ط؛ط§ظ‹ ظ„ط§ط³طھط®ط¯ط§ظ… ط§ظ„ظ‚ظٹظ…ط© ط§ظ„ظ…ط«ط§ظ„ظٹط© ط§ظ„ظ…ط­ط³ظˆط¨ط©">
       </div>
 
       <div class="computed-box" id="computedBox">
-        <div class="row"><span>المساحة</span><b id="c-area">—</b></div>
-        <div class="row"><span>وزن البداية المثالي (0.5 كجم/م²)</span><b id="c-startIdeal">—</b></div>
-        <div class="row"><span>الحد الأدنى (1 كجم/م²)</span><b id="c-min">—</b></div>
-        <div class="row"><span>المثالي (1.5 كجم/م²)</span><b id="c-ideal">—</b></div>
-        <div class="row"><span>الحد الأقصى (2 كجم/م²)</span><b id="c-max">—</b></div>
+        <div class="row"><span>ط§ظ„ظ…ط³ط§ط­ط©</span><b id="c-area">â€”</b></div>
+        <div class="row"><span>ظˆط²ظ† ط§ظ„ط¨ط¯ط§ظٹط© ط§ظ„ظ…ط«ط§ظ„ظٹ (0.5 ظƒط¬ظ…/ظ…آ²)</span><b id="c-startIdeal">â€”</b></div>
+        <div class="row"><span>ط§ظ„ط­ط¯ ط§ظ„ط£ط¯ظ†ظ‰ (1 ظƒط¬ظ…/ظ…آ²)</span><b id="c-min">â€”</b></div>
+        <div class="row"><span>ط§ظ„ظ…ط«ط§ظ„ظٹ (1.5 ظƒط¬ظ…/ظ…آ²)</span><b id="c-ideal">â€”</b></div>
+        <div class="row"><span>ط§ظ„ط­ط¯ ط§ظ„ط£ظ‚طµظ‰ (2 ظƒط¬ظ…/ظ…آ²)</span><b id="c-max">â€”</b></div>
       </div>
 
       <div class="form-group" style="margin-top:18px;">
         <div class="toggle-row">
-          <span class="toggle-label">تحديد موعد الوجبة يدوياً</span>
+          <span class="toggle-label">طھط­ط¯ظٹط¯ ظ…ظˆط¹ط¯ ط§ظ„ظˆط¬ط¨ط© ظٹط¯ظˆظٹط§ظ‹</span>
           <div class="toggle-switch" id="feedManualToggle" onclick="toggleFeedManual()"><div class="knob"></div></div>
         </div>
         <input type="date" id="f-nextFeed" style="display:none;">
-        <div class="hint" id="feedAutoHint">هيتحسب أوتوماتيك حسب وزن الدود ومساحة المزرعة</div>
+        <div class="hint" id="feedAutoHint">ظ‡ظٹطھط­ط³ط¨ ط£ظˆطھظˆظ…ط§طھظٹظƒ ط­ط³ط¨ ظˆط²ظ† ط§ظ„ط¯ظˆط¯ ظˆظ…ط³ط§ط­ط© ط§ظ„ظ…ط²ط±ط¹ط©</div>
       </div>
 
       <div class="form-group">
         <div class="toggle-row">
-          <span class="toggle-label">تحديد موعد الخف يدوياً</span>
+          <span class="toggle-label">طھط­ط¯ظٹط¯ ظ…ظˆط¹ط¯ ط§ظ„ط®ظپ ظٹط¯ظˆظٹط§ظ‹</span>
           <div class="toggle-switch" id="harvestManualToggle" onclick="toggleHarvestManual()"><div class="knob"></div></div>
         </div>
         <input type="date" id="f-nextHarvest" style="display:none;">
-        <div class="hint" id="harvestAutoHint">هيتحسب أوتوماتيك حسب توقع وصول الوزن للحد الأقصى</div>
+        <div class="hint" id="harvestAutoHint">ظ‡ظٹطھط­ط³ط¨ ط£ظˆطھظˆظ…ط§طھظٹظƒ ط­ط³ط¨ طھظˆظ‚ط¹ ظˆطµظˆظ„ ط§ظ„ظˆط²ظ† ظ„ظ„ط­ط¯ ط§ظ„ط£ظ‚طµظ‰</div>
       </div>
 
       <div class="form-group">
-        <label>ملاحظات</label>
-        <textarea id="f-notes" placeholder="أي ملاحظات إضافية..."></textarea>
+        <label>ظ…ظ„ط§ط­ط¸ط§طھ</label>
+        <textarea id="f-notes" placeholder="ط£ظٹ ظ…ظ„ط§ط­ط¸ط§طھ ط¥ط¶ط§ظپظٹط©..."></textarea>
       </div>
 
-      <button class="btn-primary" onclick="saveFarm()">حفظ المزرعة</button>
-      <button class="btn-secondary" id="deleteBtn" style="display:none;" onclick="deleteFarm()">حذف المزرعة</button>
+      <button class="btn-primary" onclick="saveFarm()">ط­ظپط¸ ط§ظ„ظ…ط²ط±ط¹ط©</button>
+      <button class="btn-secondary" id="deleteBtn" style="display:none;" onclick="deleteFarm()">ط­ط°ظپ ط§ظ„ظ…ط²ط±ط¹ط©</button>
     </div>
   </div>
 </div>
@@ -516,8 +516,8 @@
   <div class="sheet">
     <div class="sheet-handle"></div>
     <div class="sheet-header">
-      <h2 id="detailTitle">—</h2>
-      <button class="sheet-close" onclick="closeDetailSheet()">✕</button>
+      <h2 id="detailTitle">â€”</h2>
+      <button class="sheet-close" onclick="closeDetailSheet()">âœ•</button>
     </div>
     <div class="sheet-body" id="detailBody"></div>
   </div>
@@ -528,23 +528,23 @@
   <div class="sheet">
     <div class="sheet-handle"></div>
     <div class="sheet-header">
-      <h2>تسجيل عملية خف</h2>
-      <button class="sheet-close" onclick="closeHarvestSheet()">✕</button>
+      <h2>طھط³ط¬ظٹظ„ ط¹ظ…ظ„ظٹط© ط®ظپ</h2>
+      <button class="sheet-close" onclick="closeHarvestSheet()">âœ•</button>
     </div>
     <div class="sheet-body">
       <div class="form-group">
-        <label>تاريخ الخف</label>
+        <label>طھط§ط±ظٹط® ط§ظ„ط®ظپ</label>
         <input type="date" id="h-date">
       </div>
       <div class="form-group">
-        <label>وزن الدود الناتج (جم)</label>
-        <input type="number" id="h-yield" placeholder="مثال: 230">
+        <label>ظˆط²ظ† ط§ظ„ط¯ظˆط¯ ط§ظ„ظ†ط§طھط¬ (ط¬ظ…)</label>
+        <input type="number" id="h-yield" placeholder="ظ…ط«ط§ظ„: 230">
       </div>
       <div class="form-group">
-        <label>ملاحظات — اختياري</label>
-        <textarea id="h-notes" placeholder="مثال: طريقة الطعام، فائض تم توزيعه على ريدويجلر 4"></textarea>
+        <label>ظ…ظ„ط§ط­ط¸ط§طھ â€” ط§ط®طھظٹط§ط±ظٹ</label>
+        <textarea id="h-notes" placeholder="ظ…ط«ط§ظ„: ط·ط±ظٹظ‚ط© ط§ظ„ط·ط¹ط§ظ…طŒ ظپط§ط¦ط¶ طھظ… طھظˆط²ظٹط¹ظ‡ ط¹ظ„ظ‰ ط±ظٹط¯ظˆظٹط¬ظ„ط± 4"></textarea>
       </div>
-      <button class="btn-primary" onclick="saveHarvest()">حفظ عملية الخف</button>
+      <button class="btn-primary" onclick="saveHarvest()">ط­ظپط¸ ط¹ظ…ظ„ظٹط© ط§ظ„ط®ظپ</button>
     </div>
   </div>
 </div>
@@ -554,28 +554,28 @@
   <div class="sheet">
     <div class="sheet-handle"></div>
     <div class="sheet-header">
-      <h2>إضافة Grits</h2>
-      <button class="sheet-close" onclick="closeGritsSheet()">✕</button>
+      <h2>ط¥ط¶ط§ظپط© Grits</h2>
+      <button class="sheet-close" onclick="closeGritsSheet()">âœ•</button>
     </div>
     <div class="sheet-body">
       <div class="form-group">
-        <label>النوع</label>
+        <label>ط§ظ„ظ†ظˆط¹</label>
         <select id="g-type">
-          <option value="eggshell">بودرة قشر البيض</option>
-          <option value="tea">تفل الشاي</option>
-          <option value="coffee">تفل القهوة</option>
-          <option value="other">أخرى</option>
+          <option value="eggshell">ط¨ظˆط¯ط±ط© ظ‚ط´ط± ط§ظ„ط¨ظٹط¶</option>
+          <option value="tea">طھظپظ„ ط§ظ„ط´ط§ظٹ</option>
+          <option value="coffee">طھظپظ„ ط§ظ„ظ‚ظ‡ظˆط©</option>
+          <option value="other">ط£ط®ط±ظ‰</option>
         </select>
       </div>
       <div class="form-group">
-        <label>تاريخ الإضافة</label>
+        <label>طھط§ط±ظٹط® ط§ظ„ط¥ط¶ط§ظپط©</label>
         <input type="date" id="g-date">
       </div>
       <div class="form-group">
-        <label>ملاحظات — اختياري</label>
-        <textarea id="g-notes" placeholder="كمية تقريبية أو أي تفاصيل..."></textarea>
+        <label>ظ…ظ„ط§ط­ط¸ط§طھ â€” ط§ط®طھظٹط§ط±ظٹ</label>
+        <textarea id="g-notes" placeholder="ظƒظ…ظٹط© طھظ‚ط±ظٹط¨ظٹط© ط£ظˆ ط£ظٹ طھظپط§طµظٹظ„..."></textarea>
       </div>
-      <button class="btn-primary" onclick="saveGrits()">حفظ</button>
+      <button class="btn-primary" onclick="saveGrits()">ط­ظپط¸</button>
     </div>
   </div>
 </div>
@@ -585,28 +585,28 @@
   <div class="sheet">
     <div class="sheet-handle"></div>
     <div class="sheet-header">
-      <h2>إضافة الموقع كتطبيق</h2>
-      <button class="sheet-close" onclick="closeInstallSheet()">✕</button>
+      <h2>ط¥ط¶ط§ظپط© ط§ظ„ظ…ظˆظ‚ط¹ ظƒطھط·ط¨ظٹظ‚</h2>
+      <button class="sheet-close" onclick="closeInstallSheet()">âœ•</button>
     </div>
     <div class="sheet-body">
       <div class="install-tab-group">
-        <button class="install-tab active" id="tab-ios" onclick="switchInstallTab('ios')">آيفون</button>
-        <button class="install-tab" id="tab-android" onclick="switchInstallTab('android')">أندرويد</button>
+        <button class="install-tab active" id="tab-ios" onclick="switchInstallTab('ios')">ط¢ظٹظپظˆظ†</button>
+        <button class="install-tab" id="tab-android" onclick="switchInstallTab('android')">ط£ظ†ط¯ط±ظˆظٹط¯</button>
       </div>
       <div id="install-steps-ios" class="install-steps">
-        <div class="install-step"><span class="step-num">1</span><span>افتح الموقع ده من متصفح <b>Safari</b></span></div>
-        <div class="install-step"><span class="step-num">2</span><span>دوس على زرار المشاركة <b>⬆️</b></span></div>
-        <div class="install-step"><span class="step-num">3</span><span>اسكرول لتحت ودوس <b>"إضافة إلى الشاشة الرئيسية"</b></span></div>
-        <div class="install-step"><span class="step-num">4</span><span>دوس <b>"إضافة"</b> فوق على اليمين</span></div>
+        <div class="install-step"><span class="step-num">1</span><span>ط§ظپطھط­ ط§ظ„ظ…ظˆظ‚ط¹ ط¯ظ‡ ظ…ظ† ظ…طھطµظپط­ <b>Safari</b></span></div>
+        <div class="install-step"><span class="step-num">2</span><span>ط¯ظˆط³ ط¹ظ„ظ‰ ط²ط±ط§ط± ط§ظ„ظ…ط´ط§ط±ظƒط© <b>â¬†ï¸ڈ</b></span></div>
+        <div class="install-step"><span class="step-num">3</span><span>ط§ط³ظƒط±ظˆظ„ ظ„طھط­طھ ظˆط¯ظˆط³ <b>"ط¥ط¶ط§ظپط© ط¥ظ„ظ‰ ط§ظ„ط´ط§ط´ط© ط§ظ„ط±ط¦ظٹط³ظٹط©"</b></span></div>
+        <div class="install-step"><span class="step-num">4</span><span>ط¯ظˆط³ <b>"ط¥ط¶ط§ظپط©"</b> ظپظˆظ‚ ط¹ظ„ظ‰ ط§ظ„ظٹظ…ظٹظ†</span></div>
       </div>
       <div id="install-steps-android" class="install-steps" style="display:none;">
-        <div class="install-step"><span class="step-num">1</span><span>افتح الموقع ده من متصفح <b>Chrome</b></span></div>
-        <div class="install-step"><span class="step-num">2</span><span>دوس على الثلاث نقط <b>⋮</b></span></div>
-        <div class="install-step"><span class="step-num">3</span><span>دوس <b>"إضافة إلى الشاشة الرئيسية"</b></span></div>
-        <div class="install-step"><span class="step-num">4</span><span>دوس <b>"إضافة"</b></span></div>
+        <div class="install-step"><span class="step-num">1</span><span>ط§ظپطھط­ ط§ظ„ظ…ظˆظ‚ط¹ ط¯ظ‡ ظ…ظ† ظ…طھطµظپط­ <b>Chrome</b></span></div>
+        <div class="install-step"><span class="step-num">2</span><span>ط¯ظˆط³ ط¹ظ„ظ‰ ط§ظ„ط«ظ„ط§ط« ظ†ظ‚ط· <b>â‹®</b></span></div>
+        <div class="install-step"><span class="step-num">3</span><span>ط¯ظˆط³ <b>"ط¥ط¶ط§ظپط© ط¥ظ„ظ‰ ط§ظ„ط´ط§ط´ط© ط§ظ„ط±ط¦ظٹط³ظٹط©"</b></span></div>
+        <div class="install-step"><span class="step-num">4</span><span>ط¯ظˆط³ <b>"ط¥ط¶ط§ظپط©"</b></span></div>
       </div>
       <div class="computed-box" style="margin-top:16px;">
-        بعد ما تضيفه، افتح الموقع دايماً من الأيقونة دي على نفس الجهاز — عشان بياناتك محفوظة هناك بالذات.
+        ط¨ط¹ط¯ ظ…ط§ طھط¶ظٹظپظ‡طŒ ط§ظپطھط­ ط§ظ„ظ…ظˆظ‚ط¹ ط¯ط§ظٹظ…ط§ظ‹ ظ…ظ† ط§ظ„ط£ظٹظ‚ظˆظ†ط© ط¯ظٹ ط¹ظ„ظ‰ ظ†ظپط³ ط§ظ„ط¬ظ‡ط§ط² â€” ط¹ط´ط§ظ† ط¨ظٹط§ظ†ط§طھظƒ ظ…ط­ظپظˆط¸ط© ظ‡ظ†ط§ظƒ ط¨ط§ظ„ط°ط§طھ.
       </div>
     </div>
   </div>
@@ -638,7 +638,7 @@ async function loadFarms() {
 async function persistFarms() {
   try {
     localStorage.setItem('worm-farms-list', JSON.stringify(farms));
-  } catch (e) { showToast('حصل خطأ في الحفظ، حاول تاني'); }
+  } catch (e) { showToast('ط­طµظ„ ط®ط·ط£ ظپظٹ ط§ظ„ط­ظپط¸طŒ ط­ط§ظˆظ„ طھط§ظ†ظٹ'); }
 }
 
 function uid() { return 'f' + Date.now() + Math.random().toString(36).slice(2,7); }
@@ -677,9 +677,9 @@ function todayISO() {
 }
 
 function formatDateAr(iso) {
-  if (!iso) return '—';
+  if (!iso) return 'â€”';
   const d = new Date(iso + 'T00:00:00');
-  const months = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  const months = ['ظٹظ†ط§ظٹط±','ظپط¨ط±ط§ظٹط±','ظ…ط§ط±ط³','ط£ط¨ط±ظٹظ„','ظ…ط§ظٹظˆ','ظٹظˆظ†ظٹظˆ','ظٹظˆظ„ظٹظˆ','ط£ط؛ط³ط·ط³','ط³ط¨طھظ…ط¨ط±','ط£ظƒطھظˆط¨ط±','ظ†ظˆظپظ…ط¨ط±','ط¯ظٹط³ظ…ط¨ط±'];
   return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
 }
 
@@ -700,9 +700,9 @@ function getFarmStatus(farm) {
   const caps = computeCapacities(farm.length, farm.width);
   const current = estimateCurrentWeight(farm);
   const pct = (current / caps.max) * 100;
-  let status = 'ok', label = 'مستقرة';
-  if (pct >= 100) { status = 'danger'; label = 'وصلت للحد الأقصى'; }
-  else if (pct >= 80) { status = 'warn'; label = 'قريبة من الخف'; }
+  let status = 'ok', label = 'ظ…ط³طھظ‚ط±ط©';
+  if (pct >= 100) { status = 'danger'; label = 'ظˆطµظ„طھ ظ„ظ„ط­ط¯ ط§ظ„ط£ظ‚طµظ‰'; }
+  else if (pct >= 80) { status = 'warn'; label = 'ظ‚ط±ظٹط¨ط© ظ…ظ† ط§ظ„ط®ظپ'; }
   return { status, label, pct: Math.min(pct, 100), current, caps };
 }
 
@@ -732,14 +732,14 @@ function getFeedStatus(farm) {
   const days = daysBetween(todayISO(), nextFeed);
   let cls = '';
   let text = '';
-  if (days < 0) { text = `متأخرة ${Math.abs(days)} يوم`; cls = 'feed-due'; }
-  else if (days === 0) { text = 'النهاردة'; cls = 'feed-due'; }
-  else if (days <= 2) { text = `بعد ${days} يوم`; cls = 'feed-soon'; }
-  else { text = `بعد ${days} يوم`; cls = ''; }
+  if (days < 0) { text = `ظ…طھط£ط®ط±ط© ${Math.abs(days)} ظٹظˆظ…`; cls = 'feed-due'; }
+  else if (days === 0) { text = 'ط§ظ„ظ†ظ‡ط§ط±ط¯ط©'; cls = 'feed-due'; }
+  else if (days <= 2) { text = `ط¨ط¹ط¯ ${days} ظٹظˆظ…`; cls = 'feed-soon'; }
+  else { text = `ط¨ط¹ط¯ ${days} ظٹظˆظ…`; cls = ''; }
   return { text, cls, date: nextFeed, days };
 }
 
-// Feature 2: Auto next-harvest estimate — solve doubling curve for when weight hits max
+// Feature 2: Auto next-harvest estimate â€” solve doubling curve for when weight hits max
 function getNextHarvestDate(farm) {
   if (farm.harvestManual && farm.nextHarvest) return { date: farm.nextHarvest, manual: true };
   const startW = farm.startWeight || computeCapacities(farm.length, farm.width).startIdeal;
@@ -756,11 +756,11 @@ function getNextHarvestDate(farm) {
 
 function getHarvestStatusText(farm) {
   const h = getNextHarvestDate(farm);
-  if (!h.date) return '—';
+  if (!h.date) return 'â€”';
   const days = daysBetween(todayISO(), h.date);
-  if (days < 0) return `متأخر ${Math.abs(days)} يوم`;
-  if (days === 0) return 'النهاردة';
-  return `بعد ${days} يوم`;
+  if (days < 0) return `ظ…طھط£ط®ط± ${Math.abs(days)} ظٹظˆظ…`;
+  if (days === 0) return 'ط§ظ„ظ†ظ‡ط§ط±ط¯ط©';
+  return `ط¨ط¹ط¯ ${days} ظٹظˆظ…`;
 }
 
 // ===================== SORTING =====================
@@ -798,7 +798,7 @@ function onSortChange() {
 
 // ===================== RENDER =====================
 function render() {
-  document.getElementById('todayStamp').innerHTML = `<b>${formatDateAr(todayISO())}</b>${farms.length} مزرعة نشطة`;
+  document.getElementById('todayStamp').innerHTML = `<b>${formatDateAr(todayISO())}</b>${farms.length} ظ…ط²ط±ط¹ط© ظ†ط´ط·ط©`;
   document.getElementById('sortSelect').value = currentSort;
   renderSummary();
   renderList();
@@ -814,22 +814,22 @@ function renderSummary() {
     if (getFeedStatus(f).cls === 'feed-due') feedDueCount++;
   });
   strip.innerHTML = `
-    <div class="sum-pill"><span class="dot ok"></span>مستقرة <span class="num">${okCount}</span></div>
-    <div class="sum-pill"><span class="dot warn"></span>قريبة من الخف <span class="num">${warnCount}</span></div>
-    <div class="sum-pill"><span class="dot danger"></span>محتاجة خف <span class="num">${dangerCount}</span></div>
-    ${feedDueCount > 0 ? `<div class="sum-pill" style="background:var(--danger-bg);border-color:transparent;"><span>🍽️</span>وجبات مستحقة <span class="num">${feedDueCount}</span></div>` : ''}
+    <div class="sum-pill"><span class="dot ok"></span>ظ…ط³طھظ‚ط±ط© <span class="num">${okCount}</span></div>
+    <div class="sum-pill"><span class="dot warn"></span>ظ‚ط±ظٹط¨ط© ظ…ظ† ط§ظ„ط®ظپ <span class="num">${warnCount}</span></div>
+    <div class="sum-pill"><span class="dot danger"></span>ظ…ط­طھط§ط¬ط© ط®ظپ <span class="num">${dangerCount}</span></div>
+    ${feedDueCount > 0 ? `<div class="sum-pill" style="background:var(--danger-bg);border-color:transparent;"><span>ًںچ½ï¸ڈ</span>ظˆط¬ط¨ط§طھ ظ…ط³طھط­ظ‚ط© <span class="num">${feedDueCount}</span></div>` : ''}
   `;
 }
 
 function renderList() {
   const wrap = document.getElementById('farmListWrap');
-  document.getElementById('farmCountLabel').textContent = farms.length ? `${farms.length} مزرعة` : '';
+  document.getElementById('farmCountLabel').textContent = farms.length ? `${farms.length} ظ…ط²ط±ط¹ط©` : '';
 
   if (farms.length === 0) {
     wrap.innerHTML = `
       <div class="empty-state">
-        <div class="icon">🪱</div>
-        <p>لسه مفيش مزارع مسجلة.<br>ابدأ بإضافة أول مزرعة من الزرار تحت.</p>
+        <div class="icon">ًںھ±</div>
+        <p>ظ„ط³ظ‡ ظ…ظپظٹط´ ظ…ط²ط§ط±ط¹ ظ…ط³ط¬ظ„ط©.<br>ط§ط¨ط¯ط£ ط¨ط¥ط¶ط§ظپط© ط£ظˆظ„ ظ…ط²ط±ط¹ط© ظ…ظ† ط§ظ„ط²ط±ط§ط± طھط­طھ.</p>
       </div>`;
     return;
   }
@@ -839,11 +839,11 @@ function renderList() {
 
   let html = '';
   if (wigglers.length) {
-    html += `<div class="section-label">🔴 ريدويجلر — ${wigglers.length}</div>`;
+    html += `<div class="section-label">ًں”´ ط±ظٹط¯ظˆظٹط¬ظ„ط± â€” ${wigglers.length}</div>`;
     html += wigglers.map(renderCard).join('');
   }
   if (crawlers.length) {
-    html += `<div class="section-label">🟢 زاحف أفريقي — ${crawlers.length}</div>`;
+    html += `<div class="section-label">ًںں¢ ط²ط§ط­ظپ ط£ظپط±ظٹظ‚ظٹ â€” ${crawlers.length}</div>`;
     html += crawlers.map(renderCard).join('');
   }
   wrap.innerHTML = html;
@@ -870,7 +870,7 @@ function renderCard(farm) {
               <span class="species-chip ${chipClass}">${speciesLabel}</span>
               <span class="farm-name">${farm.name}</span>
             </div>
-            <div class="farm-dims">${farm.length}×${farm.width}×${farm.height} سم</div>
+            <div class="farm-dims">${farm.length}أ—${farm.width}أ—${farm.height} ط³ظ…</div>
           </div>
         </div>
         <div class="status-badge ${s.status}">${s.label}</div>
@@ -878,8 +878,8 @@ function renderCard(farm) {
 
       <div class="gauge-wrap">
         <div class="gauge-labels">
-          <span class="current">${s.current} جم</span>
-          <span>الحد الأقصى ${s.caps.max} جم</span>
+          <span class="current">${s.current} ط¬ظ…</span>
+          <span>ط§ظ„ط­ط¯ ط§ظ„ط£ظ‚طµظ‰ ${s.caps.max} ط¬ظ…</span>
         </div>
         <div class="gauge-track">
           <div class="gauge-fill" style="width:${s.pct}%; ${fillColors}"></div>
@@ -888,16 +888,16 @@ function renderCard(farm) {
 
       <div class="farm-meta-row">
         <div class="meta-item">
-          <span class="label">من الإنشاء</span>
-          <span class="value">${days} يوم</span>
+          <span class="label">ظ…ظ† ط§ظ„ط¥ظ†ط´ط§ط،</span>
+          <span class="value">${days} ظٹظˆظ…</span>
         </div>
         <div class="meta-item">
-          <span class="label">الوجبة القادمة</span>
+          <span class="label">ط§ظ„ظˆط¬ط¨ط© ط§ظ„ظ‚ط§ط¯ظ…ط©</span>
           <span class="value ${feed.cls}">${feed.text}</span>
         </div>
       </div>
       <div class="farm-meta-row-2">
-        <span class="meta-item"><span class="label">موعد الخف المتوقع</span><span class="value">${harvestText}</span></span>
+        <span class="meta-item"><span class="label">ظ…ظˆط¹ط¯ ط§ظ„ط®ظپ ط§ظ„ظ…طھظˆظ‚ط¹</span><span class="value">${harvestText}</span></span>
       </div>
     </div>
   `;
@@ -909,7 +909,7 @@ let harvestManualState = false;
 
 function openAddSheet(farmId = null) {
   editingFarmId = farmId;
-  document.getElementById('addSheetTitle').textContent = farmId ? 'تعديل المزرعة' : 'مزرعة جديدة';
+  document.getElementById('addSheetTitle').textContent = farmId ? 'طھط¹ط¯ظٹظ„ ط§ظ„ظ…ط²ط±ط¹ط©' : 'ظ…ط²ط±ط¹ط© ط¬ط¯ظٹط¯ط©';
   document.getElementById('deleteBtn').style.display = farmId ? 'block' : 'none';
 
   if (farmId) {
@@ -945,9 +945,18 @@ function openAddSheet(farmId = null) {
   updateFeedToggleUI();
   updateHarvestToggleUI();
   document.getElementById('addOverlay').classList.add('open');
+  pushSheetState('addOverlay', closeAddSheet);
 }
 
-function closeAddSheet() {
+function closeAddSheet(fromPopstate) {
+  document.getElementById('addOverlay').classList.remove('open');
+  editingFarmId = null;
+  if (!fromPopstate) popSheetState();
+}
+
+function hideAddSheetUI() {
+  // Same as closeAddSheet but never touches history â€” used when the caller
+  // (e.g. deleteFarm) is closing multiple sheets and will pop history itself.
   document.getElementById('addOverlay').classList.remove('open');
   editingFarmId = null;
 }
@@ -983,13 +992,13 @@ function updateComputed() {
   const w = parseFloat(document.getElementById('f-width').value) || 0;
   if (l > 0 && w > 0) {
     const caps = computeCapacities(l, w);
-    document.getElementById('c-area').textContent = caps.area.toFixed(3) + ' م²';
-    document.getElementById('c-startIdeal').textContent = caps.startIdeal + ' جم';
-    document.getElementById('c-min').textContent = caps.min + ' جم';
-    document.getElementById('c-ideal').textContent = caps.ideal + ' جم';
-    document.getElementById('c-max').textContent = caps.max + ' جم';
+    document.getElementById('c-area').textContent = caps.area.toFixed(3) + ' ظ…آ²';
+    document.getElementById('c-startIdeal').textContent = caps.startIdeal + ' ط¬ظ…';
+    document.getElementById('c-min').textContent = caps.min + ' ط¬ظ…';
+    document.getElementById('c-ideal').textContent = caps.ideal + ' ط¬ظ…';
+    document.getElementById('c-max').textContent = caps.max + ' ط¬ظ…';
   } else {
-    ['c-area','c-startIdeal','c-min','c-ideal','c-max'].forEach(id => document.getElementById(id).textContent = '—');
+    ['c-area','c-startIdeal','c-min','c-ideal','c-max'].forEach(id => document.getElementById(id).textContent = 'â€”');
   }
 }
 
@@ -1005,7 +1014,7 @@ async function saveFarm() {
   const nextHarvest = document.getElementById('f-nextHarvest').value;
 
   if (!name || !startDate || !length || !width || !height) {
-    showToast('من فضلك املأ كل الحقول الأساسية');
+    showToast('ظ…ظ† ظپط¶ظ„ظƒ ط§ظ…ظ„ط£ ظƒظ„ ط§ظ„ط­ظ‚ظˆظ„ ط§ظ„ط£ط³ط§ط³ظٹط©');
     return;
   }
 
@@ -1018,10 +1027,10 @@ async function saveFarm() {
   if (editingFarmId) {
     const farm = farms.find(f => f.id === editingFarmId);
     Object.assign(farm, payload);
-    showToast('تم تحديث المزرعة');
+    showToast('طھظ… طھط­ط¯ظٹط« ط§ظ„ظ…ط²ط±ط¹ط©');
   } else {
     farms.push({ id: uid(), ...payload, log: [], harvests: [], grits: [] });
-    showToast('تم إضافة المزرعة');
+    showToast('طھظ… ط¥ط¶ط§ظپط© ط§ظ„ظ…ط²ط±ط¹ط©');
   }
 
   await persistFarms();
@@ -1033,10 +1042,11 @@ async function deleteFarm() {
   if (!editingFarmId) return;
   farms = farms.filter(f => f.id !== editingFarmId);
   await persistFarms();
-  closeAddSheet();
-  closeDetailSheet();
+  hideAddSheetUI();
+  hideDetailSheetUI();
+  popSheetStateMultiple(2);
   render();
-  showToast('تم حذف المزرعة');
+  showToast('طھظ… ط­ط°ظپ ط§ظ„ظ…ط²ط±ط¹ط©');
 }
 
 // ===================== DETAIL SHEET =====================
@@ -1047,6 +1057,7 @@ function openDetail(farmId) {
   activeDetailTab = 'overview';
   renderDetailBody(farmId);
   document.getElementById('detailOverlay').classList.add('open');
+  pushSheetState('detailOverlay', closeDetailSheet);
 }
 
 function switchDetailTab(tab) {
@@ -1063,7 +1074,7 @@ function renderDetailBody(farmId) {
   const feedPlan = computeFeedPlan(farm);
   const harvestText = getHarvestStatusText(farm);
   const days = daysBetween(farm.startDate, todayISO());
-  const speciesLabel = farm.species === 'wiggler' ? '🔴 ريدويجلر' : '🟢 زاحف أفريقي';
+  const speciesLabel = farm.species === 'wiggler' ? 'ًں”´ ط±ظٹط¯ظˆظٹط¬ظ„ط±' : 'ًںں¢ ط²ط§ط­ظپ ط£ظپط±ظٹظ‚ظٹ';
   const accentClass = farm.species === 'wiggler' ? 'accent-wiggler' : 'accent-crawler';
 
   document.getElementById('detailTitle').textContent = farm.name;
@@ -1071,17 +1082,17 @@ function renderDetailBody(farmId) {
   const notesLogHtml = (farm.log && farm.log.length)
     ? [...farm.log].map((l, idx) => farm.log.length - 1 - idx).reverse().map((originalIdx) => {
         const l = farm.log[originalIdx];
-        const icon = l.type === 'feed' ? '🍽️' : l.type === 'moisture' ? '💧' : l.type === 'turning' ? '🔄' : l.type === 'check' ? '👁️' : '📝';
+        const icon = l.type === 'feed' ? 'ًںچ½ï¸ڈ' : l.type === 'moisture' ? 'ًں’§' : l.type === 'turning' ? 'ًں”„' : l.type === 'check' ? 'ًں‘پï¸ڈ' : 'ًں“‌';
         return `
         <div class="log-item">
           <div class="log-text">${icon} ${l.text}</div>
           <div style="display:flex; align-items:center; gap:4px;">
             <div class="log-date">${formatDateAr(l.date)}</div>
-            <button class="log-delete" onclick="deleteLogEntry('${farm.id}', ${originalIdx})" title="حذف">✕</button>
+            <button class="log-delete" onclick="deleteLogEntry('${farm.id}', ${originalIdx})" title="ط­ط°ظپ">âœ•</button>
           </div>
         </div>`;
       }).join('')
-    : `<div class="log-empty">مفيش ملاحظات مسجلة لسه</div>`;
+    : `<div class="log-empty">ظ…ظپظٹط´ ظ…ظ„ط§ط­ط¸ط§طھ ظ…ط³ط¬ظ„ط© ظ„ط³ظ‡</div>`;
 
   const harvestsHtml = (farm.harvests && farm.harvests.length)
     ? [...farm.harvests].reverse().map((h, revIdx) => {
@@ -1089,39 +1100,39 @@ function renderDetailBody(farmId) {
         return `
         <div class="harvest-item">
           <div>
-            <div class="yield">${h.yieldWeight} جم</div>
-            <div class="hdate">${formatDateAr(h.date)}${h.notes ? ' · ' + h.notes : ''}</div>
+            <div class="yield">${h.yieldWeight} ط¬ظ…</div>
+            <div class="hdate">${formatDateAr(h.date)}${h.notes ? ' آ· ' + h.notes : ''}</div>
           </div>
-          <button class="log-delete" onclick="deleteHarvestEntry('${farm.id}', ${originalIdx})" title="حذف">✕</button>
+          <button class="log-delete" onclick="deleteHarvestEntry('${farm.id}', ${originalIdx})" title="ط­ط°ظپ">âœ•</button>
         </div>`;
       }).join('')
-    : `<div class="log-empty">مفيش عمليات خف مسجلة لسه</div>`;
+    : `<div class="log-empty">ظ…ظپظٹط´ ط¹ظ…ظ„ظٹط§طھ ط®ظپ ظ…ط³ط¬ظ„ط© ظ„ط³ظ‡</div>`;
 
   const gritsHtml = (farm.grits && farm.grits.length)
     ? [...farm.grits].reverse().map((g, revIdx) => {
         const originalIdx = farm.grits.length - 1 - revIdx;
-        const typeLabels = { eggshell: 'بودرة قشر البيض', tea: 'تفل الشاي', coffee: 'تفل القهوة', other: 'أخرى' };
+        const typeLabels = { eggshell: 'ط¨ظˆط¯ط±ط© ظ‚ط´ط± ط§ظ„ط¨ظٹط¶', tea: 'طھظپظ„ ط§ظ„ط´ط§ظٹ', coffee: 'طھظپظ„ ط§ظ„ظ‚ظ‡ظˆط©', other: 'ط£ط®ط±ظ‰' };
         return `
         <div class="log-item">
-          <div class="log-text">🌾 ${typeLabels[g.type] || g.type}${g.notes ? ' — ' + g.notes : ''}</div>
+          <div class="log-text">ًںŒ¾ ${typeLabels[g.type] || g.type}${g.notes ? ' â€” ' + g.notes : ''}</div>
           <div style="display:flex; align-items:center; gap:4px;">
             <div class="log-date">${formatDateAr(g.date)}</div>
-            <button class="log-delete" onclick="deleteGritsEntry('${farm.id}', ${originalIdx})" title="حذف">✕</button>
+            <button class="log-delete" onclick="deleteGritsEntry('${farm.id}', ${originalIdx})" title="ط­ط°ظپ">âœ•</button>
           </div>
         </div>`;
       }).join('')
-    : `<div class="log-empty">مفيش إضافات Grits مسجلة لسه</div>`;
+    : `<div class="log-empty">ظ…ظپظٹط´ ط¥ط¶ط§ظپط§طھ Grits ظ…ط³ط¬ظ„ط© ظ„ط³ظ‡</div>`;
 
   document.getElementById('detailBody').innerHTML = `
     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-      <span style="font-size:12.5px; color:var(--ink-soft);">${speciesLabel} · ${farm.length}×${farm.width}×${farm.height} سم</span>
+      <span style="font-size:12.5px; color:var(--ink-soft);">${speciesLabel} آ· ${farm.length}أ—${farm.width}أ—${farm.height} ط³ظ…</span>
       <div class="status-badge ${s.status}">${s.label}</div>
     </div>
 
     <div class="gauge-wrap" style="margin-top:10px;">
       <div class="gauge-labels">
-        <span class="current">${s.current} جم (تقديري)</span>
-        <span>أقصى ${s.caps.max} جم</span>
+        <span class="current">${s.current} ط¬ظ… (طھظ‚ط¯ظٹط±ظٹ)</span>
+        <span>ط£ظ‚طµظ‰ ${s.caps.max} ط¬ظ…</span>
       </div>
       <div class="gauge-track">
         <div class="gauge-fill" style="width:${s.pct}%; ${farm.species === 'wiggler' ? '--fill-c1:#A64B2A;--fill-c2:#C97A54;' : '--fill-c1:#5C6B47;--fill-c2:#7D8D63;'}"></div>
@@ -1130,43 +1141,43 @@ function renderDetailBody(farmId) {
 
     <div class="detail-stat-grid">
       <div class="detail-stat">
-        <div class="label">تاريخ الإنشاء</div>
+        <div class="label">طھط§ط±ظٹط® ط§ظ„ط¥ظ†ط´ط§ط،</div>
         <div class="value small">${formatDateAr(farm.startDate)}</div>
       </div>
       <div class="detail-stat">
-        <div class="label">عمر المزرعة</div>
-        <div class="value ${accentClass}">${days} يوم</div>
+        <div class="label">ط¹ظ…ط± ط§ظ„ظ…ط²ط±ط¹ط©</div>
+        <div class="value ${accentClass}">${days} ظٹظˆظ…</div>
       </div>
       <div class="detail-stat">
-        <div class="label">الوجبة القادمة${farm.feedManual ? ' (يدوي)' : ''}</div>
+        <div class="label">ط§ظ„ظˆط¬ط¨ط© ط§ظ„ظ‚ط§ط¯ظ…ط©${farm.feedManual ? ' (ظٹط¯ظˆظٹ)' : ''}</div>
         <div class="value ${feed.cls} small">${feed.text}</div>
       </div>
       <div class="detail-stat">
-        <div class="label">موعد الخف المتوقع${farm.harvestManual ? ' (يدوي)' : ''}</div>
+        <div class="label">ظ…ظˆط¹ط¯ ط§ظ„ط®ظپ ط§ظ„ظ…طھظˆظ‚ط¹${farm.harvestManual ? ' (ظٹط¯ظˆظٹ)' : ''}</div>
         <div class="value small">${harvestText}</div>
       </div>
     </div>
 
     <div class="computed-box" style="margin-bottom:16px;">
-      <b style="display:block; margin-bottom:4px; font-family:'IBM Plex Sans Arabic';">خطة التغذية المقترحة:</b>
-      <div class="row"><span>الاستهلاك اليومي التقريبي</span><b>${feedPlan.dailyRation} جم</b></div>
-      <div class="row"><span>كل كام يوم</span><b>${feedPlan.interval} يوم</b></div>
-      <div class="row"><span>كمية الوجبة الواحدة المقترحة</span><b>${feedPlan.perFeeding} جم</b></div>
+      <b style="display:block; margin-bottom:4px; font-family:'IBM Plex Sans Arabic';">ط®ط·ط© ط§ظ„طھط؛ط°ظٹط© ط§ظ„ظ…ظ‚طھط±ط­ط©:</b>
+      <div class="row"><span>ط§ظ„ط§ط³طھظ‡ظ„ط§ظƒ ط§ظ„ظٹظˆظ…ظٹ ط§ظ„طھظ‚ط±ظٹط¨ظٹ</span><b>${feedPlan.dailyRation} ط¬ظ…</b></div>
+      <div class="row"><span>ظƒظ„ ظƒط§ظ… ظٹظˆظ…</span><b>${feedPlan.interval} ظٹظˆظ…</b></div>
+      <div class="row"><span>ظƒظ…ظٹط© ط§ظ„ظˆط¬ط¨ط© ط§ظ„ظˆط§ط­ط¯ط© ط§ظ„ظ…ظ‚طھط±ط­ط©</span><b>${feedPlan.perFeeding} ط¬ظ…</b></div>
     </div>
 
-    ${farm.notes ? `<div class="computed-box" style="margin-bottom:16px;"><b style="display:block; margin-bottom:4px; font-family:'IBM Plex Sans Arabic';">ملاحظات:</b>${farm.notes}</div>` : ''}
+    ${farm.notes ? `<div class="computed-box" style="margin-bottom:16px;"><b style="display:block; margin-bottom:4px; font-family:'IBM Plex Sans Arabic';">ظ…ظ„ط§ط­ط¸ط§طھ:</b>${farm.notes}</div>` : ''}
 
     <div class="quick-actions">
-      <button onclick="quickLog('${farm.id}', 'feed')">🍽️ سجل تغذية</button>
-      <button onclick="quickLog('${farm.id}', 'moisture')">💧 سجل ترطيب</button>
-      <button onclick="quickLog('${farm.id}', 'check')">👁️ سجل فحص</button>
-      <button onclick="quickLog('${farm.id}', 'turning')">🔄 تم التقليب</button>
-      <button onclick="openAddSheet('${farm.id}')">✏️ تعديل المزرعة</button>
+      <button onclick="quickLog('${farm.id}', 'feed')">ًںچ½ï¸ڈ ط³ط¬ظ„ طھط؛ط°ظٹط©</button>
+      <button onclick="quickLog('${farm.id}', 'moisture')">ًں’§ ط³ط¬ظ„ طھط±ط·ظٹط¨</button>
+      <button onclick="quickLog('${farm.id}', 'check')">ًں‘پï¸ڈ ط³ط¬ظ„ ظپط­طµ</button>
+      <button onclick="quickLog('${farm.id}', 'turning')">ًں”„ طھظ… ط§ظ„طھظ‚ظ„ظٹط¨</button>
+      <button onclick="openAddSheet('${farm.id}')">âœڈï¸ڈ طھط¹ط¯ظٹظ„ ط§ظ„ظ…ط²ط±ط¹ط©</button>
     </div>
 
     <div class="tab-group">
-      <button class="tab-btn ${activeDetailTab === 'overview' ? 'active' : ''}" onclick="switchDetailTab('overview')">الملاحظات</button>
-      <button class="tab-btn ${activeDetailTab === 'harvests' ? 'active' : ''}" onclick="switchDetailTab('harvests')">الخف</button>
+      <button class="tab-btn ${activeDetailTab === 'overview' ? 'active' : ''}" onclick="switchDetailTab('overview')">ط§ظ„ظ…ظ„ط§ط­ط¸ط§طھ</button>
+      <button class="tab-btn ${activeDetailTab === 'harvests' ? 'active' : ''}" onclick="switchDetailTab('harvests')">ط§ظ„ط®ظپ</button>
       <button class="tab-btn ${activeDetailTab === 'grits' ? 'active' : ''}" onclick="switchDetailTab('grits')">Grits</button>
     </div>
 
@@ -1175,18 +1186,25 @@ function renderDetailBody(farmId) {
     </div>
 
     <div class="tab-panel ${activeDetailTab === 'harvests' ? 'active' : ''}">
-      <button class="btn-primary" style="margin-bottom:14px;" onclick="openHarvestSheet('${farm.id}')">＋ تسجيل عملية خف جديدة</button>
+      <button class="btn-primary" style="margin-bottom:14px;" onclick="openHarvestSheet('${farm.id}')">ï¼‹ طھط³ط¬ظٹظ„ ط¹ظ…ظ„ظٹط© ط®ظپ ط¬ط¯ظٹط¯ط©</button>
       <div>${harvestsHtml}</div>
     </div>
 
     <div class="tab-panel ${activeDetailTab === 'grits' ? 'active' : ''}">
-      <button class="btn-primary" style="margin-bottom:14px;" onclick="openGritsSheet('${farm.id}')">＋ إضافة Grits</button>
+      <button class="btn-primary" style="margin-bottom:14px;" onclick="openGritsSheet('${farm.id}')">ï¼‹ ط¥ط¶ط§ظپط© Grits</button>
       <div>${gritsHtml}</div>
     </div>
   `;
 }
 
-function closeDetailSheet() {
+function closeDetailSheet(fromPopstate) {
+  document.getElementById('detailOverlay').classList.remove('open');
+  if (!fromPopstate) popSheetState();
+}
+
+function hideDetailSheetUI() {
+  // Same as closeDetailSheet but never touches history â€” used when the
+  // caller (e.g. deleteFarm) is closing multiple sheets and pops history itself.
   document.getElementById('detailOverlay').classList.remove('open');
 }
 
@@ -1199,17 +1217,17 @@ async function quickLog(farmId, type) {
   let entry;
   let label;
   if (type === 'feed') {
-    entry = { date: todayISO(), text: 'تمت إضافة وجبة تغذية', type: 'feed' };
-    label = 'تم تسجيل التغذية';
+    entry = { date: todayISO(), text: 'طھظ…طھ ط¥ط¶ط§ظپط© ظˆط¬ط¨ط© طھط؛ط°ظٹط©', type: 'feed' };
+    label = 'طھظ… طھط³ط¬ظٹظ„ ط§ظ„طھط؛ط°ظٹط©';
   } else if (type === 'moisture') {
-    entry = { date: todayISO(), text: 'تم ترطيب المزرعة', type: 'moisture' };
-    label = 'تم تسجيل الترطيب';
+    entry = { date: todayISO(), text: 'طھظ… طھط±ط·ظٹط¨ ط§ظ„ظ…ط²ط±ط¹ط©', type: 'moisture' };
+    label = 'طھظ… طھط³ط¬ظٹظ„ ط§ظ„طھط±ط·ظٹط¨';
   } else if (type === 'turning') {
-    entry = { date: todayISO(), text: 'تم تقليب الميديا', type: 'turning' };
-    label = 'تم تسجيل التقليب';
+    entry = { date: todayISO(), text: 'طھظ… طھظ‚ظ„ظٹط¨ ط§ظ„ظ…ظٹط¯ظٹط§', type: 'turning' };
+    label = 'طھظ… طھط³ط¬ظٹظ„ ط§ظ„طھظ‚ظ„ظٹط¨';
   } else {
-    entry = { date: todayISO(), text: 'تم فحص المزرعة — الحالة عادية', type: 'check' };
-    label = 'تم تسجيل الفحص';
+    entry = { date: todayISO(), text: 'طھظ… ظپط­طµ ط§ظ„ظ…ط²ط±ط¹ط© â€” ط§ظ„ط­ط§ظ„ط© ط¹ط§ط¯ظٹط©', type: 'check' };
+    label = 'طھظ… طھط³ط¬ظٹظ„ ط§ظ„ظپط­طµ';
   }
 
   farm.log.push(entry);
@@ -1225,7 +1243,7 @@ async function quickLog(farmId, type) {
       persistFarms();
       if (editingFarmId === farmId) renderDetailBody(farmId);
       render();
-      showToast('تم التراجع');
+      showToast('طھظ… ط§ظ„طھط±ط§ط¬ط¹');
     }
   });
 }
@@ -1238,7 +1256,7 @@ async function deleteLogEntry(farmId, idx) {
   await persistFarms();
   renderDetailBody(farmId);
   render();
-  showToast('تم حذف الملاحظة');
+  showToast('طھظ… ط­ط°ظپ ط§ظ„ظ…ظ„ط§ط­ط¸ط©');
 }
 
 // ===================== HARVEST SHEET (Feature 6) =====================
@@ -1248,9 +1266,11 @@ function openHarvestSheet(farmId) {
   document.getElementById('h-yield').value = '';
   document.getElementById('h-notes').value = '';
   document.getElementById('harvestOverlay').classList.add('open');
+  pushSheetState('harvestOverlay', closeHarvestSheet);
 }
-function closeHarvestSheet() {
+function closeHarvestSheet(fromPopstate) {
   document.getElementById('harvestOverlay').classList.remove('open');
+  if (!fromPopstate) popSheetState();
 }
 async function saveHarvest() {
   const farm = farms.find(f => f.id === editingFarmId);
@@ -1258,14 +1278,14 @@ async function saveHarvest() {
   const date = document.getElementById('h-date').value;
   const yieldWeight = parseFloat(document.getElementById('h-yield').value);
   const notes = document.getElementById('h-notes').value.trim();
-  if (!date || !yieldWeight) { showToast('من فضلك أدخل التاريخ والوزن'); return; }
+  if (!date || !yieldWeight) { showToast('ظ…ظ† ظپط¶ظ„ظƒ ط£ط¯ط®ظ„ ط§ظ„طھط§ط±ظٹط® ظˆط§ظ„ظˆط²ظ†'); return; }
   if (!farm.harvests) farm.harvests = [];
   farm.harvests.push({ date, yieldWeight, notes });
   await persistFarms();
   closeHarvestSheet();
   renderDetailBody(farm.id);
   render();
-  showToast('تم تسجيل عملية الخف');
+  showToast('طھظ… طھط³ط¬ظٹظ„ ط¹ظ…ظ„ظٹط© ط§ظ„ط®ظپ');
 }
 async function deleteHarvestEntry(farmId, idx) {
   const farm = farms.find(f => f.id === farmId);
@@ -1273,7 +1293,7 @@ async function deleteHarvestEntry(farmId, idx) {
   farm.harvests.splice(idx, 1);
   await persistFarms();
   renderDetailBody(farmId);
-  showToast('تم حذف السجل');
+  showToast('طھظ… ط­ط°ظپ ط§ظ„ط³ط¬ظ„');
 }
 
 // ===================== GRITS SHEET (Feature 7) =====================
@@ -1283,9 +1303,11 @@ function openGritsSheet(farmId) {
   document.getElementById('g-date').value = todayISO();
   document.getElementById('g-notes').value = '';
   document.getElementById('gritsOverlay').classList.add('open');
+  pushSheetState('gritsOverlay', closeGritsSheet);
 }
-function closeGritsSheet() {
+function closeGritsSheet(fromPopstate) {
   document.getElementById('gritsOverlay').classList.remove('open');
+  if (!fromPopstate) popSheetState();
 }
 async function saveGrits() {
   const farm = farms.find(f => f.id === editingFarmId);
@@ -1293,13 +1315,13 @@ async function saveGrits() {
   const type = document.getElementById('g-type').value;
   const date = document.getElementById('g-date').value;
   const notes = document.getElementById('g-notes').value.trim();
-  if (!date) { showToast('من فضلك أدخل التاريخ'); return; }
+  if (!date) { showToast('ظ…ظ† ظپط¶ظ„ظƒ ط£ط¯ط®ظ„ ط§ظ„طھط§ط±ظٹط®'); return; }
   if (!farm.grits) farm.grits = [];
   farm.grits.push({ type, date, notes });
   await persistFarms();
   closeGritsSheet();
   renderDetailBody(farm.id);
-  showToast('تم تسجيل الإضافة');
+  showToast('طھظ… طھط³ط¬ظٹظ„ ط§ظ„ط¥ط¶ط§ظپط©');
 }
 async function deleteGritsEntry(farmId, idx) {
   const farm = farms.find(f => f.id === farmId);
@@ -1307,10 +1329,71 @@ async function deleteGritsEntry(farmId, idx) {
   farm.grits.splice(idx, 1);
   await persistFarms();
   renderDetailBody(farmId);
-  showToast('تم حذف السجل');
+  showToast('طھظ… ط­ط°ظپ ط§ظ„ط³ط¬ظ„');
 }
 
-// ===================== TOAST (with undo support) =====================
+// ===================== SHEET HISTORY STACK (swipe/back button support) =====================
+// Problem: opening a sheet (overlay) doesn't register in browser history, so a
+// swipe-back or the phone's back button exits the whole site instead of just
+// closing the open sheet.
+//
+// Approach: every open sheet pushes one history entry. A popstate event (from
+// a swipe/back gesture) closes the top sheet instead of leaving the page.
+// When a sheet is closed normally (âœ• button or a save/delete action), we
+// call history.back() to consume that entry so back-history doesn't
+// accumulate ghost "sheet" states over time.
+//
+// The one case that needs care is closing two sheets in the same action
+// (e.g. deleting a farm from the edit sheet, which sits on top of the
+// detail sheet â€” both need to close together). For that we use
+// popSheetStateMultiple(n) to jump back n entries in a single navigation,
+// avoiding any race between rapid consecutive history.back() calls.
+let sheetStack = [];
+let isPoppingState = false;
+
+function pushSheetState(overlayId, closeFn) {
+  sheetStack.push({ overlayId, closeFn });
+  if (!isPoppingState) {
+    history.pushState({ wormSheet: overlayId, stackDepth: sheetStack.length }, '');
+  }
+}
+
+function popSheetState() {
+  // Called when a single sheet is closed via its own âœ• button / save / delete action.
+  if (sheetStack.length === 0) return;
+  sheetStack.pop();
+  if (!isPoppingState) {
+    history.back();
+  }
+}
+
+function popSheetStateMultiple(n) {
+  // Called when closing several stacked sheets at once (e.g. delete-farm
+  // closes the edit sheet AND the detail sheet beneath it together).
+  if (sheetStack.length === 0 || n <= 0) return;
+  const actual = Math.min(n, sheetStack.length);
+  sheetStack.length -= actual;
+  if (!isPoppingState) {
+    history.go(-actual);
+  }
+}
+
+window.addEventListener('popstate', function() {
+  if (sheetStack.length > 0) {
+    isPoppingState = true;
+    const top = sheetStack[sheetStack.length - 1];
+    top.closeFn(true); // true = "already handled by browser back, don't touch history again"
+    sheetStack.pop();
+    isPoppingState = false;
+  }
+  // If sheetStack is empty, do nothing special â€” the browser navigates back/exits normally.
+});
+
+
+
+
+
+
 function showToast(msg) {
   const existing = document.querySelector('.toast');
   if (existing) existing.remove();
@@ -1332,7 +1415,7 @@ function showToastWithUndo(msg, undoFn) {
   span.textContent = msg;
   const btn = document.createElement('button');
   btn.className = 'undo-btn';
-  btn.textContent = 'تراجع';
+  btn.textContent = 'طھط±ط§ط¬ط¹';
   btn.onclick = () => { undoFn(); toast.remove(); };
   toast.appendChild(span);
   toast.appendChild(btn);
@@ -1358,8 +1441,12 @@ function dismissInstallBanner() {
 function openInstallSheet() {
   switchInstallTab(isIOS() ? 'ios' : 'android');
   document.getElementById('installOverlay').classList.add('open');
+  pushSheetState('installOverlay', closeInstallSheet);
 }
-function closeInstallSheet() { document.getElementById('installOverlay').classList.remove('open'); }
+function closeInstallSheet(fromPopstate) {
+  document.getElementById('installOverlay').classList.remove('open');
+  if (!fromPopstate) popSheetState();
+}
 function switchInstallTab(platform) {
   document.getElementById('tab-ios').classList.toggle('active', platform === 'ios');
   document.getElementById('tab-android').classList.toggle('active', platform === 'android');
